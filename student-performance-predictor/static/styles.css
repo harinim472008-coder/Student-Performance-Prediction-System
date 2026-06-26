@@ -1,0 +1,141 @@
+:root {
+    --bg: #f4f7fb;
+    --card: #ffffff;
+    --primary: #3556d6;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 24px auto;
+    padding: 0 16px 20px;
+}
+
+.card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 18px rgba(18, 43, 70, 0.05);
+}
+
+.hero {
+    margin-bottom: 16px;
+}
+
+.hero h1 {
+    margin: 0;
+    color: var(--primary);
+    border-bottom: none;
+    text-decoration: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 6px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+button {
+    margin-top: 14px;
+    width: 100%;
+    padding: 11px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(0.95);
+}
+
+.result {
+    margin-top: 8px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #eef2ff;
+    border: 1px solid #dbe3ff;
+}
+
+.result.empty {
+    color: var(--muted);
+    background: #f9fafb;
+    border-color: var(--border);
+}
+
+.result.error {
+    background: #fff1f2;
+    border-color: #fecdd3;
+    color: #9f1239;
+}
+
+.summary-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.chart-title {
+    margin: 14px 0 8px;
+    font-size: 16px;
+    color: #334155;
+}
+
+canvas {
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.stat-box {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px;
+    background: #fcfdff;
+}
+
+.stat-box h3 {
+    margin: 0 0 6px;
+    font-size: 15px;
+    color: #334155;
+}
+
+.stat-box p {
+    margin: 4px 0;
+    font-size: 13px;
+    color: #475569;
+}
